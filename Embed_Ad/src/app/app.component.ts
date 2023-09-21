@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
         this.imageName = `${imagePath}salary-1.jpg`
         this.caption = 'Life can throw different challenges at you!'
         break;
-        case "new mortgage for the purchase of your home ":
+        case "new mortgage for the purchase of your home":
         this.imageName = `${imagePath}new home mortgage (2).jpg`
         this.caption = 'Planning to buy a house?'
         break;
