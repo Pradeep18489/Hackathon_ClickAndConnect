@@ -38,8 +38,8 @@ TALLY INSURANCE
   </div>
   <div>
     <!-- <h3></h3> -->
-    <table *ngIf="imageName" [cellPadding]="0" [cellSpacing]="0" [border]="1" style="border-radius:10px;border-collapse:separate;border:solid black 1px">
-      <tr><td><b>Interests</b></td><td><b>Demographics</b></td></tr>
+    <table *ngIf="imageName" [cellPadding]="0" [cellSpacing]="0" [border]="1" style="border-radius:10px;border-collapse:separate;border:solid black 1px;width: 1000px;">
+      <tr><td style="text-align: center;"><b>Interests</b></td><td style="text-align: center;"><b>Top Demographic</b></td></tr>
       <tr>
         <td><ul>
           <li *ngFor="let interest of interests">
