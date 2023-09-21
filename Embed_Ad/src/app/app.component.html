@@ -28,11 +28,11 @@ TALLY INSURANCE
     <input matInput [(ngModel)]="lifeEventName">
 </mat-form-field>
 <button mat-raised-button color="primary" style="margin-left: 15px;" (click)="Search()">Search</button>
-<div style="display: flex;flex-direction: row;gap:50px">
-  <div>
+<div style="display: flex;flex-direction: column;gap:50px">
+  <div *ngIf="imageName">
     <h3>Contextual Image for Advertisement</h3>
     <!-- <span style="position: relative;top:20px;left:100px; font-weight: bold;color: green;">{{caption}}</span> -->
-    <img style="height:300px;width: 500px;" [src]="imageName">
+    <img style="height:700px;width: 1000px;" [src]="imageName">
     <br/><br/>
     <span>Contextual Caption for Advertisement : </span><span style="color: green;font-weight: bold;"> {{caption}}</span>
   </div>
@@ -42,5 +42,6 @@ TALLY INSURANCE
   </div>
 </div>
 <button mat-raised-button color="primary" style="margin-top: 15px;">Publish</button>
+<br/>
 <br/>
 </div>
