@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/78ab88aa-5ff9-4399-8111-13823139e985/resourceGroups/Embedded-Advertisement-rg/providers/Microsoft.Web/sites/EmbedAd",
+    "appService.deploySubpath": "Embed_Ad\\dist\\embed-ad"
+}
