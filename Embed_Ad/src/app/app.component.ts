@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {FormControl} from '@angular/forms';
 
 @Component({
@@ -6,8 +6,25 @@ import {FormControl} from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'Embed_Ad';
   myControl = new FormControl();
-  options: string[] = ['One', 'Two', 'Three'];
+  options:any;
+  imageName:string = "";
+  lifeEventName:string="";
+  ngOnInit() {
+    this.options = ['One', 'Two', 'Three'];
+  }
+
+  Search(){
+    this.SearchImage();
+  }
+
+  private SearchImage(){
+    const imagePath = "../assets/images/";
+    switch(this.lifeEventName.toLowerCase()){
+      case "your marriage":
+        this.imageName = `${imagePath}adoption (2).jpg`
+      }
+  }
 }
